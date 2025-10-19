@@ -1,0 +1,85 @@
+import type { ToyotaVehicle } from './types';
+
+export const TOYOTA_FLEET: ToyotaVehicle[] = [
+  {
+    model: 'Camry',
+    price: 26420,
+    description: 'A reliable and stylish sedan, perfect for daily commuting and comfortable drives.',
+    image: 'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2026/camry/nightshade/2558/3u5/36/5.png?fmt=png-alpha&wid=930&hei=328&qlt=90',
+    tags: { style: 'Sedan', useCase: 'Commuting' },
+    seatingCapacity: 5,
+    specialOffer: '0.9% APR for 48 months',
+  },
+  {
+    model: 'RAV4',
+    price: 28475,
+    description: 'Versatile and adventurous SUV, ready for both city streets and weekend getaways.',
+    image: 'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2025/rav4/hybridxse/4530/2vv/18/3.png?fmt=png-alpha&wid=930&hei=328&qlt=90',
+    tags: { style: 'SUV', useCase: 'Family' },
+    seatingCapacity: 5,
+  },
+  {
+    model: 'Tacoma',
+    price: 29000,
+    description: 'A rugged and durable truck built for tough jobs and off-road exploration.',
+    image: 'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2025/tacoma/trdpro/7598/m16/36/5.png?fmt=png-alpha&wid=930&hei=328&qlt=90',
+    tags: { style: 'Truck', useCase: 'Hauling' },
+    seatingCapacity: 4,
+    specialOffer: '$1000 Cash Back',
+  },
+  {
+    model: 'Sienna',
+    price: 37185,
+    description: 'The ultimate family minivan, offering spacious comfort and modern hybrid efficiency.',
+    image: 'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2025/sienna/xle/5408/1j9/36/5.png?fmt=png-alpha&wid=930&hei=328&qlt=90',
+    tags: { style: 'Minivan', useCase: 'Family' },
+    seatingCapacity: 8,
+  },
+  {
+    model: 'Highlander',
+    price: 39270,
+    description: 'A three-row SUV that combines practicality with a premium feel for the whole family.',
+    image: 'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2026/highlander/hybridplatinum/6967/8x8/36/5.png?fmt=webp-alpha&wid=930&hei=328&qlt=90',
+    tags: { style: 'SUV', useCase: 'Family' },
+    seatingCapacity: 8,
+    specialOffer: '1.9% APR for 60 months',
+  },
+  {
+    model: '4Runner',
+    price: 40705,
+    description: 'Iconic off-road SUV with legendary capability and a bold, adventurous spirit.',
+    image: 'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2025/4runner/trdpro/8634/040/36/5.png?fmt=png-alpha&wid=930&hei=328&qlt=90',
+    tags: { style: 'SUV', useCase: 'Off-road' },
+    seatingCapacity: 7,
+  },
+  {
+    model: 'Corolla',
+    price: 22050,
+    description: 'A compact and fuel-efficient sedan known for its long-term value and reliability.',
+    image: 'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2026/corolla/xse/1866/1k3/36/5.png?fmt=png-alpha&wid=930&hei=328&qlt=90',
+    tags: { style: 'Sedan', useCase: 'Commuting' },
+    seatingCapacity: 5,
+  },
+  {
+    model: 'GR Supra',
+    price: 46635,
+    description: 'A thrilling sports car that delivers exhilarating performance and head-turning design.',
+    image: 'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2026/grsupra/mkvfinaledition/2376/d24/36/5.png?fmt=webp-alpha&wid=930&hei=328&qlt=90',
+    tags: { style: 'Sports Car', useCase: 'Performance' },
+    seatingCapacity: 2,
+    specialOffer: 'Special Lease Offer',
+  },
+  {
+    model: 'Tundra',
+    price: 39965,
+    description: 'A full-size pickup truck that offers immense power, advanced technology, and capability.',
+    image: 'https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2026/tundra/limited/8272/3u5/36/5.png?fmt=webp-alpha&wid=930&hei=328&qlt=90',
+    tags: { style: 'Truck', useCase: 'Hauling' },
+    seatingCapacity: 5,
+  },
+];
+
+export const VEHICLE_PREFERENCES = {
+  style: ['Sedan', 'SUV', 'Truck', 'Minivan', 'Sports Car'],
+  useCase: ['Commuting', 'Family', 'Off-road', 'Hauling', 'Performance'],
+};
